@@ -2,13 +2,26 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## コマンド
+
+```bash
+npm run build        # TypeScript コンパイル
+npm run lint         # ESLint チェック
+npm run lint:fix     # ESLint 自動修正
+npm run format       # Prettier フォーマット
+npm run format:check # Prettier チェック
+npm run typecheck    # 型チェックのみ
+npm run test         # Vitest (watch mode)
+npm run test:run     # Vitest (single run)
+```
+
 ## プロジェクト概要
 
 シャープレイ値計算ライブラリの TypeScript 実装。Rust版 (shapley-rs) からの移植で、Next.js Server Actions での使用を想定した npm パッケージ。
 
 ## アーキテクチャ
 
-```
+```text
 src/
 ├── index.ts      # エントリポイント（全エクスポート）
 ├── types.ts      # CharacteristicFunction, ShapleyResult 型
