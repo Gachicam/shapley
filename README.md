@@ -1,5 +1,7 @@
 # shapley
 
+[![CI](https://github.com/Gachicam/shapley/actions/workflows/ci.yml/badge.svg)](https://github.com/Gachicam/shapley/actions/workflows/ci.yml)
+
 シャープレイ値計算ライブラリの TypeScript 実装。
 
 ## インストール
